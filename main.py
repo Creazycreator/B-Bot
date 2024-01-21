@@ -127,7 +127,7 @@ def apikey():
             print('')
             print("Once created, you will need to activate the permission to perform trades.")
             print('For more information, visit the following GitHub page: ')
-            print('https://github.com/that-comming')
+            print('https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#binance-api-key')
             print('')
             exit()
             
