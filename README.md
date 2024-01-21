@@ -12,6 +12,7 @@ A Binance bot that buys new cryptocurrencies.
 - Choose the cryptocurrency you want to monitor
 - Set the time at which you want the code to launch.
     - This option will likely change.
+- Executes trades only in USDT
 
 ## Installation
 This code has been tested on **Windows 10** with **Python 3.10.X**
@@ -48,6 +49,28 @@ Don't forget to authorize trades, otherwise, the bot will return an error during
 ![Trading](https://github.com/Creazycreator/B-Bot/assets/77204986/4d40e1a1-91c2-48f4-89bf-ed2adf03f2a9)
 
 ## Additional information
+
+### General Information
+
+1. At the moment, the bot only allows trading on the USDT pair
+2. The amount to be placed in the buy order can be modified within the code for now
+   - It is not recommended to set a value too high, as it may result in losses
+   
+```python
+amount_in_usdt = 5  # (Line 145) Change the value here to increase or decrease how much you want to buy on a dip (currently set to 5 USDT)
+symbol_to_buy = pair_to_watch
+
+order = client.create_order(
+    symbol=symbol_to_buy,
+    side=SIDE_BUY,
+    type='MARKET',
+    quoteOrderQty=amount_in_usdt,
+)
+```
+
+### Coming soon
+
+- [ ] Possibility to set the amount in USDT for the buy order.
 
 ### Risk of using the trading bot
 
