@@ -28,3 +28,6 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+## Binance API Key
+For Binance API keys, you can follow this link that explains how to obtain them: [How to Create API Keys on Binance?](https://www.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072)
