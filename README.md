@@ -14,6 +14,16 @@ A Binance bot that buys new cryptocurrencies.
     - This option will likely change.
 - Executes trades only in USDT
 
+## Resource Table
+
+| Resource                        | Links                                   |
+| ------------------------------- | --------------------------------------- |
+| 💿 **Installation**             | [Installation](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#installation)|
+| 🔑 **Binance API Key**          | [Binance API Key](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#binance-api-key)|
+| ⌚ **Coming soon**               | [Coming soon](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#coming-soon)
+| 📰 **General Information**   | [General Information](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#general-information)|
+| 📑 **Additional Information**   | [Additional Information](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#additional-information)|
+
 ## Installation
 This code has been tested on **Windows 10** with **Python 3.10.X**
 
@@ -48,9 +58,13 @@ Don't forget to authorize trades, otherwise, the bot will return an error during
 
 ![Trading](https://github.com/Creazycreator/B-Bot/assets/77204986/4d40e1a1-91c2-48f4-89bf-ed2adf03f2a9)
 
-## Additional information
+## Coming soon
 
-### General Information
+- [ ] Possibility to set the amount in USDT for the buy order.
+- [ ] Write a more organized code
+- [ ] Subtract 10 seconds from the requested launch time of the code (WebSocket launch time)
+
+## General Information
 
 1. At the moment, the bot only allows trading on the USDT pair
 2. The amount to be placed in the buy order can be modified within the code for now
@@ -68,9 +82,7 @@ order = client.create_order(
 )
 ```
 
-### Coming soon
-
-- [ ] Possibility to set the amount in USDT for the buy order.
+## Additional information
 
 ### Risk of using the trading bot
 
@@ -80,5 +92,6 @@ By using this bot, you accept the associated risks :
 
 - The high volatility of cryptocurrencies can result in the partial or complete loss of your capital.
 - You will be solely responsible for the loss of this capital. Neither I or anyone else will be required to reimburse the lost amount.
+- Do not use a large amount for the purchase, as you may risk losing a significant sum.
 
 Seeking professional financial advice is recommended, especially for those unfamiliar with the complexities of trading. Remember that the cryptocurrency market is dynamic, and adjustments may be necessary to adapt to changing conditions. Please trade responsibly and be aware of the evolving nature of the crypto space.
