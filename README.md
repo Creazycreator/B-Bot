@@ -19,9 +19,10 @@ A Binance bot that buys new cryptocurrencies.
 | Resource                        | Links                                   |
 | ------------------------------- | --------------------------------------- |
 | 💿 **Installation**             | [Installation](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#installation)|
+| 📚 **How to use**               | [How to use](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#how-to-use)|
 | 🔑 **Binance API Key**          | [Binance API Key](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#binance-api-key)|
-| ⌚ **Coming soon**               | [Coming soon](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#coming-soon)
-| 📰 **General Information**   | [General Information](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#general-information)|
+| ⌚ **Coming soon**              | [Coming soon](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#coming-soon)
+| 📰 **General Information**      | [General Information](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#general-information)|
 | 📑 **Additional Information**   | [Additional Information](https://github.com/Creazycreator/B-Bot?tab=readme-ov-file#additional-information)|
 
 ## Installation
@@ -39,6 +40,22 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+## How to use
+
+1. At first, you will be asked for the API key. Just follow the instructions; if you don't have an API key, the process is explained below
+2. Then, once the API keys are validated, you will need two pieces of information:
+    - The name of the upcoming new listing
+    - The date on which the new listing will be available
+3. Once these pieces of information are known, enter the pair name (case insensitive, and do not add USDT as it will be added automatically)
+    - [❌] BTCUSDT, btcusdt
+    - [✔] BTC, btc
+4. Next, for the date, I recommend setting it to 20 seconds before the arrival of the new listing, for example:
+    - For example, if the pair is scheduled to be listed at 10:00 AM
+    - You should set it to 9:59:40
+    - The 20 seconds will be dedicated to launching the WebSocket; this manipulation will be corrected in future versions
+5. Once all these parameters are entered, you just have to wait for the bot to buy as soon as it receives information about the new pair
+6. It is crucial to **_keep the program open until the end_**; otherwise, the purchase of the new pair will not occur (unless you want to stop the program with CTRL+C)
 
 ## Binance API Key
 For Binance API keys, you can follow this link that explains how to obtain them: [How to Create API Keys on Binance?](https://www.binance.com/en/support/faq/how-to-create-api-keys-on-binance-360002502072)
