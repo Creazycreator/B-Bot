@@ -1,7 +1,9 @@
 <div align="center">
-# ![Logo](https://raw.githubusercontent.com/Creazycreator/B-Bot/db2adcd5846bfe9f1ce35ff595271c3b7891f66d/images/b-bot.png)
+  ![b-bot](https://github.com/Creazycreator/B-Bot/assets/77204986/cb6ab57a-cbc4-4246-b057-238b8411f4b2)
 </div>
-## B-Bot
+# B-Bot
 A Binance bot that buys new cryptocurrencies.
   - Uses WebSockets for better performance. 🚀
   - Semi-automatic bot. 🤖
+
+
