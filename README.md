@@ -66,6 +66,7 @@ Don't forget to authorize trades, otherwise, the bot will return an error during
 
 ## General Information
 
+### Change the amount to be traded
 1. At the moment, the bot only allows trading on the USDT pair
 2. The amount to be placed in the buy order can be modified within the code for now
    - It is not recommended to set a value too high, as it may result in losses
@@ -81,6 +82,14 @@ order = client.create_order(
     quoteOrderQty=amount_in_usdt,
 )
 ```
+
+### Compatible versions:
+
+[🔴] Python 3.8.X
+[🟢] Python 3.9.X
+[🟢] Python 3.10.X
+[🟢] Python 3.11.X
+[🔴] Python 3.12.X
 
 ## Additional information
 
