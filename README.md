@@ -102,11 +102,11 @@ order = client.create_order(
 
 ### Compatible versions:
 
-- [🔴] Python 3.8.X
-- [🟢] Python 3.9.X
-- [🟢] Python 3.10.X
-- [🟢] Python 3.11.X
-- [🔴] Python 3.12.X
+- [❌] Python 3.8.X
+- [✔] Python 3.9.X
+- [✔] Python 3.10.X
+- [✔] Python 3.11.X
+- [❌] Python 3.12.X
 
 ## Additional information
 
