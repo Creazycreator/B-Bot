@@ -89,7 +89,7 @@ Don't forget to authorize trades, otherwise, the bot will return an error during
    - It is not recommended to set a value too high, as it may result in losses
    
 ```python
-amount_in_usdt = 5  # (Line 145) Change the value here to increase or decrease how much you want to buy on a dip (currently set to 5 USDT)
+amount_in_usdt = 5  # (Line 149) Change the value here to increase or decrease how much you want to buy on a dip (currently set to 5 USDT)
 symbol_to_buy = pair_to_watch
 
 order = client.create_order(
@@ -114,7 +114,7 @@ order = client.create_order(
 
 Trading bots come with inherent risks, and the volatile nature of the cryptocurrency market can lead to financial losses. Users should exercise caution, thoroughly understand the functionalities of the bot, and be aware that past performance is not indicative of future results. It is crucial to trade responsibly and only invest what one can afford to lose.
 
-By using this bot, you accept the associated risks :
+By using this code, you confirm that you have read and are aware of the Terms and Conditions, the latest version of which is dated 25/01/2024 and you accept the associated risks :
 
 - The high volatility of cryptocurrencies can result in the partial or complete loss of your capital.
 - You will be solely responsible for the loss of this capital. Neither I or anyone else will be required to reimburse the lost amount.
