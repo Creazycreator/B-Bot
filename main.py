@@ -139,10 +139,14 @@ def apikey():
         
     return True
 
+MakeBuyError=bool(True)
+
 def makebuy(pair_to_watch):
 # Place a buy order if the WebSocket receives information about the pair
+    global MakeBuyError
+    
     try:
-        amount_in_usdt = 5  # Amount in USDT you want to spend
+        amount_in_usdt = 5 # Amount in USDT you want to spend
         symbol_to_buy = pair_to_watch
 
         # Create a market buy order
@@ -167,10 +171,13 @@ def makebuy(pair_to_watch):
         logging.info(f"Type: {order['type']}")
         logging.info(f"Status: {order['status']}")
         
+        MakeBuyError=bool(False)
+        
     except Exception as e:
         print(f"An error occurred: {e}")
         # Log an error
         logging.error(f"General error: {e}")
+        MakeBuyError=bool(True)
     
 # Initialize the Binance client
 binance_api_key = None
@@ -224,14 +231,16 @@ try:
             print(f"The pair {pair_to_watch} is listening. Waiting for information... (Press Ctrl+C to interrupt.)")
         
         except KeyboardInterrupt:
-            print("\nInterruption par l'utilisateur. WebSocket connection closed.")
+            print("\Program interrupted by the user. WebSocket connection closed.")
         
         finally:
             # Wait for the end of the WebSocket thread
             websocket_thread.join()
             print('Attempting to send a buy order signal.')
             logging.info("Attempting to send a buy order signal.")
-            makebuy(pair_to_watch.upper())
+            while MakeBuyError==True:
+                makebuy(pair_to_watch.upper())
+                
     else:
         print("The pair name is not valid. Use only alphabet letters.")
         logging.error(f"The pair name is not valid: {pair_to_watch}")
